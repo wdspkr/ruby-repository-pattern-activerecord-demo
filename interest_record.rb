@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class InterestData < ActiveRecord::Base
+class InterestRecord < ActiveRecord::Base
   self.table_name = 'interests'
 
   belongs_to :account
