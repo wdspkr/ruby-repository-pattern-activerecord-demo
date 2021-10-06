@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-module InterestRepo
+module InterestRepository
   extend self
 
   def my_index

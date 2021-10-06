@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class InterestRecord < ActiveRecord::Base
   self.table_name = 'interests'
 
