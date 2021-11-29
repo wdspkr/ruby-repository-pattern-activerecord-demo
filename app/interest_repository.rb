@@ -11,7 +11,7 @@ module InterestRepository
     load_from_data(InterestRecord.includes(:account).find(id))
   end
 
-  # This can be used to load the interest from the account
+  # This can be used to load the interest from the associated account
   def load_from_data(interest_data)
     Interest.new(interest_data.attributes_with_associations)
   end

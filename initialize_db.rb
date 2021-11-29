@@ -1,5 +1,3 @@
-require_relative 'load'
-
 ActiveRecord::Schema.define do
   create_table :interests do |table|
     table.integer :amount
