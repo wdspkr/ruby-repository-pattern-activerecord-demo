@@ -1,6 +1,6 @@
 require './load_app'
 
-RSpec.describe InterestRepository do
+RSpec.describe 'InterestRepository workflow' do
   it 'can CRUD the interest' do
     # Create the Interest and save it to the DB
     account = Account.create(iban: 'DE123')

@@ -1,11 +1,13 @@
 This is a demo repository to show an implementation of the Repository design pattern with Activerecord
 
-To run the spec do the following:
+To run the specs do the following:
 
 ```
 $ bundle install
-$ bundle exec rspec spec/interest_repository_spec.rb
+$ bundle exec rspec spec
 ```
+
+If you are interested in how this can be integrated with Factory Bot check the `spec/interest_factory.rb` file.
 
 To play around with the code just fire up an interactive ruby session like this:
 
