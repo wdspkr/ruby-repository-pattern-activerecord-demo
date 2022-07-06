@@ -8,12 +8,13 @@ ActiveRecord::Base.logger = Logger.new(STDERR)
 
 # DB Setup
 # drop
-FileUtils.rm 'db/active_record_repo_demo.sqlite3'
+DB = 'db/active_record_repo_demo.sqlite3'
+FileUtils.rm DB if File.file?(DB)
 
 # connect
 ActiveRecord::Base.establish_connection(
     :adapter => "sqlite3",
-    database: 'db/active_record_repo_demo.sqlite3',
+    database: DB,
 )
 
 # initialize
